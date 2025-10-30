@@ -1,6 +1,17 @@
 package com.example.inputpengguna
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Text
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.LineHeightStyle
 
 
 annotation class composable
@@ -22,7 +33,7 @@ fun FormatDataDiri(modifier: Modifier
 
     Column(modifier = Modifier.padding(top = 50.dp)
             verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = LineHeightStyle.Alignment.CenterHorizontally
     )
     {
         OutlinedTextField(
@@ -40,15 +51,23 @@ fun FormatDataDiri(modifier: Modifier
                     selected = textJK == item,
                     onClick = {
                         textJK = item
-                    }
-
-
+                    }),vertical Alignment .CenterVertically)
+                {
+                    RadioButton(selected = textJK == item,
+                        onClick = {
+                            textJK = item
+                        }
+                    )
             }
+                OutlinedTextField(
+                    value = textAlamat
+                            singelLine = true,
+                    modifier = Modifier.width (width = 250.dp),
+                    label ={ Text(text = "Alamat Lengkap")},
+                    onValueChange = {textAlamat = it}
+                )
         }
 
-
-
     }
-
 
 }
