@@ -77,6 +77,11 @@ fun FormatDataDiri(modifier: Modifier
                     color = color.DarkGray
                 )
 
+                Button(
+                    modifier=Modifier.fillMaxwidth(fraction=1f),
+                    //the button is enabled when the user makes a selection
+                )
+
 
         }
 
