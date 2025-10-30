@@ -89,7 +89,9 @@ fun FormatDataDiri(modifier: Modifier
 
                     }
 
-                )
+                ){
+                    Text(text = stringResource(id = R.string.submit))
+                }
 
 
         }
