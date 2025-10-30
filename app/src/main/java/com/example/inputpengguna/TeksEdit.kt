@@ -1,5 +1,9 @@
 package com.example.inputpengguna
 
+import androidx.compose.foundation.layout.Row
+
+
+annotation class composable
 
 @composable
 fun FormatDataDiri(modifier: Modifier
@@ -23,6 +27,27 @@ fun FormatDataDiri(modifier: Modifier
     {
         OutlinedTextField(
             value = textNama
+            singelLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width (width = 250.dp),
+            label = { Text(text = "Nama Lengkap")},
+            onValueChange = {textNama = it}
+        )
+
+        Row {
+            gender.forEach { item ->
+                Row(modifier = Modifier.selectable(
+                    selected = textJK == item,
+                    onClick = {
+                        textJK = item
+                    }
+
+
+            }
+        }
+
+
+
     }
 
 
