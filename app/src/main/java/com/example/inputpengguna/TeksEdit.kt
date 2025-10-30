@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -80,6 +81,13 @@ fun FormatDataDiri(modifier: Modifier
                 Button(
                     modifier=Modifier.fillMaxwidth(fraction=1f),
                     //the button is enabled when the user makes a selection
+                    enabled = textAlamat.isNotempty(),
+                    onClick = {
+                        nama = textNama
+                        alamat = textAlamat
+                        jenis = textJK
+                    }
+
                 )
 
 
