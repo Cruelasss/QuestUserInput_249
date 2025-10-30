@@ -94,6 +94,12 @@ fun FormatDataDiri(modifier: Modifier
                 }
 
                 HorizontalDivider{
+                    modifier = Modifier.padding(
+                        bottom = dimensionResource(id= R.dimen.padding_mediuma),
+                        top =dimensionResource(
+                            id=R.dimen.padding_medium
+                    )),
+                }
 
                 }
 
