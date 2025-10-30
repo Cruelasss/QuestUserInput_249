@@ -2,6 +2,7 @@ package com.example.inputpengguna
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
@@ -103,6 +104,15 @@ fun FormatDataDiri(modifier: Modifier
                     color = color.DarkGray
 
                 }
+
+                ElevateCard (
+                    elevation = CardDefaults.cardElevation(
+                        defaultElevation = dimensionResource(id = R.dimen.card_elevation
+                ),
+                        colors = CardDefaults.cardColors(ContainerColor=Color.Black),
+                        modifier = Modifier
+                            .height(100.dp)
+                            .width(300.dp)
 
                 }
 
