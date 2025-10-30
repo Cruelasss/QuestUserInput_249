@@ -84,8 +84,9 @@ fun FormatDataDiri(modifier: Modifier
                     enabled = textAlamat.isNotempty(),
                     onClick = {
                         nama = textNama
-                        alamat = textAlamat
                         jenis = textJK
+                        alamat = textAlamat
+
                     }
 
                 )
