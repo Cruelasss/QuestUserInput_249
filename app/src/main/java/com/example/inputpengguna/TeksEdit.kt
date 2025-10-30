@@ -68,7 +68,11 @@ fun FormatDataDiri(modifier: Modifier
                 )
 
                 HorizontalDivider(
-
+                    modifier = Modifier.padding(bottom = dimensionResource(30dp),
+                        top =dimensionResource(
+                            id=30dp
+                    )),
+                    t
                 )
 
         }
