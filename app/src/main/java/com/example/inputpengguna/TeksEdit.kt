@@ -66,6 +66,11 @@ fun FormatDataDiri(modifier: Modifier
                     label ={ Text(text = "Alamat Lengkap")},
                     onValueChange = {textAlamat = it}
                 )
+
+                HorizontalDivider(
+
+                )
+
         }
 
     }
