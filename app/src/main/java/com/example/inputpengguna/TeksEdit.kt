@@ -14,3 +14,16 @@ fun FormatDataDiri(modifier: Modifier
     var alamat by remember { mutableStateOf(value ="") }
     var jenis by remember { mutableStateOf(value ="") }
 
+    val gender:List<String> = listOf("Laki-laki","Perempuan")
+
+    Column(modifier = Modifier.padding(top = 50.dp)
+            verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+    {
+        OutlinedTextField(
+            value = textNama
+    }
+
+
+}
