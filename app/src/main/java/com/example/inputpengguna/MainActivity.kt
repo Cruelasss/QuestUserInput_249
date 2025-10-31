@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             InputPenggunaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Ganti Greeting dengan FormatDataDiri
-                    FormatDataDiri(
+                    FormDataDiri(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
