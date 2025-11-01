@@ -79,3 +79,4 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             selected = textJK == item,
                             onClick = { textJK = item }
                         ),
+                    verticalAlignment = Alignment.CenterVertically
