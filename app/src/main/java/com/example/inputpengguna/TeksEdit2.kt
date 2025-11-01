@@ -70,3 +70,5 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         ) {
+            Text(text = "JENIS KELAMIN", style = MaterialTheme.typography.bodyMedium)
+            gender.forEach { item ->
