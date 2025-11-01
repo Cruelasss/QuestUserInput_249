@@ -20,3 +20,9 @@ import com.example.inputpengguna.ui.theme.Purple40
 
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textStatus by remember { mutableStateOf("") }
+
+
