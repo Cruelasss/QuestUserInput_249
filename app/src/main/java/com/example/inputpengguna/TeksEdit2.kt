@@ -93,3 +93,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
 
 
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        ) {
