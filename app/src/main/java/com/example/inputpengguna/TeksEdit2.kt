@@ -85,3 +85,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         selected = textJK == item,
                         onClick = { textJK = item }
                     )
+                    Text(item)
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
