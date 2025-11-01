@@ -72,3 +72,4 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         ) {
             Text(text = "JENIS KELAMIN", style = MaterialTheme.typography.bodyMedium)
             gender.forEach { item ->
+                Row(
