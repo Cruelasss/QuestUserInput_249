@@ -50,3 +50,16 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             color = Color.White
         )
 
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
+            label = { Text(text = "Isian Nama Lengkap") },
+            onValueChange = {
+                textNama = it
+            }
+        )
+
