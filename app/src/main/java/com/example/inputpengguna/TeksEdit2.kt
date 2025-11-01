@@ -100,3 +100,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         ) {
             Text(text = "STATUS PERKAWINAN", style = MaterialTheme.typography.bodyMedium)
             statusList.forEach { item ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .selectable(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        ),
