@@ -62,4 +62,6 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 textNama = it
             }
         )
+        Spacer(modifier = Modifier.height(16.dp))
+
 
