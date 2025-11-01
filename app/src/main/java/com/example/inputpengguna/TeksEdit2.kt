@@ -121,3 +121,62 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
 
 
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
+            label = { Text(text = "Alamat") },
+            onValueChange = {
+                textAlamat = it
+            }
+        )
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+
+        Button(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
+            enabled = textAlamat.isNotEmpty() && textNama.isNotEmpty() && textJK.isNotEmpty() && textStatus.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+                status = textStatus
+            }
+        ) {
+            Text(stringResource(R.string.submit))
+        }
+
+        Divider(
+            modifier = Modifier.padding(vertical = dimensionResource(id = R.dimen.padding_medium)),
+            thickness = dimensionResource(R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
+
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black),
+            modifier = Modifier
+                .height(120.dp)
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        ) {
+            Column(
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 15.dp),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(text = "Nama : " + nama, color = Color.White)
+                Text(text = "Gender : " + jenis, color = Color.White)
+                Text(text = "Status : " + status, color = Color.White)
+                Text(text = "Alamat : " + alamat, color = Color.White)
+            }
+        }
+
+    }
+}
+
+
