@@ -98,3 +98,5 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         ) {
+            Text(text = "STATUS PERKAWINAN", style = MaterialTheme.typography.bodyMedium)
+            statusList.forEach { item ->
