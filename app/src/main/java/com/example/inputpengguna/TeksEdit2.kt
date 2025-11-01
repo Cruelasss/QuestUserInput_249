@@ -40,3 +40,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+        Text(
+            text = "Formulir Pendaftaran",
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color(0xFF6750A4))
+                .padding(top = 16.dp, bottom = 24.dp),
+            textAlign = TextAlign.Center,
+            color = Color.White
+        )
+
